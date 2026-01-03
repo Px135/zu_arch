@@ -51,58 +51,6 @@ echo "Actualizando sistema..."
 sudo pacman -Syu --noconfirm
 
 # ------------------------------------------------------------
-# Herramientas básicas del sistema (IMPRESCINDIBLES)
-# ------------------------------------------------------------
-
-install_pacman \
-  base-devel \
-  git \
-  curl \
-  wget \
-  unzip \
-  zip \
-  p7zip \
-  unrar \
-  rsync \
-  lsof \
-  tree \
-  htop \
-  btop \
-  neofetch \
-  fastfetch \
-  man-db \
-  man-pages
-
-# ------------------------------------------------------------
-# Editores y terminal
-# ------------------------------------------------------------
-
-install_pacman \
-  nano \
-  vim \
-  kitty \
-  zsh
-
-# ------------------------------------------------------------
-# Servicios básicos
-# ------------------------------------------------------------
-
-install_pacman \
-  networkmanager \
-  bluez \
-  bluez-utils \
-  avahi \
-  openssh \
-  ntp
-
-echo "Activando servicios básicos..."
-sudo systemctl enable --now NetworkManager
-sudo systemctl enable --now bluetooth
-sudo systemctl enable --now avahi-daemon
-sudo systemctl enable --now sshd
-sudo systemctl enable --now ntpd
-
-# ------------------------------------------------------------
 # Flatpak
 # ------------------------------------------------------------
 
