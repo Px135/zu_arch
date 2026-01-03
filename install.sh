@@ -66,6 +66,7 @@ flatpak remote-add --if-not-exists flathub \
 
 if ! command -v yay &> /dev/null; then
   echo "Instalando yay..."
+  install_pacman git base-devel fakeroot debugedit
   git clone https://aur.archlinux.org/yay.git
   cd yay
   makepkg -si --noconfirm
