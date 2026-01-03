@@ -1,0 +1,97 @@
+#Instalacion de flatpak
+-> sudo pacman -S flatpak
+
+#Clonar yay
+-> git clone https://aur.archlinux.org/yay.git
+
+#Instalar Brave
+-> yay -Sy brave-bin
+
+#Instalar Zen
+-> flatpak install flathub app.zen_browser.zen
+
+#Instalar upscayl
+-> flatpak install flathub org.upscayl.Upscayl
+
+#Instalar Steam
+-> flatpak install flathub com.valvesoftware.Steam
+
+#Instalar Kitty terminal
+-> sudo pacman -S kitty
+
+#Instalar zsh
+-> pacman -S zsh
+
+#Cambiar terminal a zsh
+-> chsh -s $(which zsh)
+
+#Instalar Trinity (varios pasos)
+{
+    ------------------------------------------------------------------------------------------------
+    -> flatpak remote-add --if-not-exists trinity https://trinity-flatpak.codeberg.page/com.trench.trinity.launcher.flatpakrepo
+    ------------------------------------------------------------------------------------------------
+    -> flatpak install flathub org.kde.Platform//6.9
+    ------------------------------------------------------------------------------------------------
+    -> flatpak install flathub io.qt.qtwebengine.BaseApp//6.9
+    ------------------------------------------------------------------------------------------------
+    -> flatpak install com.trench.trinity.launcher
+    ------------------------------------------------------------------------------------------------
+}
+
+#Instalar Vesktop
+-> flatpak install flathub dev.vencord.Vesktop
+
+#Instalar Sober
+-> flatpak install flathub org.vinegarhq.Sober
+
+#Instalar ProtonPlus
+-> flatpak install flathub com.vysp3r.ProtonPlus
+
+#Intalar Mines
+-> flatpak install flathub org.gnome.Mines
+
+#Instalar Obsidian
+-> flatpak install flathub md.obsidian.Obsidian
+
+#Instalar Keyguard
+-> flatpak install flathub com.artemchep.keyguard
+
+#Instalar Osu! (classic en varios pasos)
+{
+    ------------------------------------------------------------------------------------------------
+    *Dependencias*
+    sudo pacman -Sy --needed --noconfirm git wget zenity xdg-desktop-portal
+    ------------------------------------------------------------------------------------------------
+    *Osu! install*
+
+    git clone https://github.com/NelloKudo/osu-winello.git
+    cd osu-winello
+    chmod +x osu-winello.sh
+    ./osu-winello.sh
+    ------------------------------------------------------------------------------------------------
+
+}
+
+#Instalar Drawpile
+-> flatpak install flathub net.drawpile.drawpile
+
+#Instalar Kdenlive
+-> flatpak install flathub org.kde.kdenlive
+
+#Intsalar GIMP
+-> flatpak install flathub org.gimp.GIMP
+
+#Instalar Prismlauncher
+-> sudo pacman -S prismlauncher
+
+#Instalar Protonmail
+-> yay -S proton-mail
+
+#Intalar Kdeconnect
+-> sudo pacman -S kdeconnect
+
+#Instalar OBS
+-> flatpak install flathub com.obsproject.Studio
+
+#Instalar RustDesk
+-> flatpak install flathub com.rustdesk.RustDesk
